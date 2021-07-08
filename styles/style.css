@@ -1,5 +1,4 @@
-
-.low-usage {
+low-usage {
   color: green;
 }
 
@@ -9,4 +8,35 @@
 
 .high-usage {
   color: red;
+}
+
+body {
+  background-color: rgb(243, 245, 220);
+}
+
+button {
+  transition-duration: 0.4s;
+  background-color: rgba(255, 0, 0, 0.377);
+  font-size: 18px;
+  border-radius: 0.75em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover {
+  background-color: red;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); /* creates shadow */
+}
+
+h1 {
+  font-size: 32px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+select {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
 }
