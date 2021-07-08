@@ -36,6 +36,27 @@ document.addEventListener("DOMContentLoaded", () => {
     updateTemperature();
   })
 
+  const displayWeather = (city) => {
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=6f4b4bf0d0b45da6c30aeaf3e10159df&units=metric`
+
+    fetch(url)
+      .then((response) => {
+        return response.json()
+      })
+      .then((data) => {
+        document.querySelector('#current-temperature').innerText = data.main.temp;
+      })
+  }
+
+  displayWeather('London');
+
+  document.querySelector('#current-city').addEventListener('change', (event) => {
+    event.preventDefault();
+    const city = document.querySelector('#current-city').value;
+
+    displayWeather(city);
+  })
+
 });
 
 
