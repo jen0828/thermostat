@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const displayWeather = (city) => {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=6f4b4bf0d0b45da6c30aeaf3e10159df&units=metric`
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=YOUR_API_KEY&units=metric`
 
     fetch(url)
       .then((response) => {
