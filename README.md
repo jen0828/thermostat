@@ -1,17 +1,19 @@
-## Thermostat 
+# Thermostat 
+A simple thermostat vanilla JS application using external weather API.
 
 ### Technologies used :
 JavaScript, Jasmin, DOM, API, HTML, CSS
 
 
-### Setting up the appliaction
+### How to run the thermostat app:
 
 ```sh
 $ git clone git@github.com:jen0828/thermostat.git
 $ cd thermostat
+$ open index.html
 ```
 
-### Running Jasmin tests
+### How to run Jasmin testing:
 
 ```sh
 $ open SpecRunner.html
